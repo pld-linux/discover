@@ -5,7 +5,7 @@
 # - update Group
 Summary:	discover - set of libraries and utilities for gathering and reporting information about a system's hardware
 Summary(pl):	discover - zbiór bibliotek oraz narzêdzi do zbierania oraz raportowania informacji o systemie
-name:		discover
+Name:		discover
 Version:	2.0.7
 Release:	0.1
 License:	GPL
@@ -55,7 +55,7 @@ Requires:	%{name} = %{version}-%{release}
 %description devel
 This is the package containing the header files for discover library.
 
-%description -l pl devel
+%description devel -l pl
 Ten pakiet zawiera pliki nag³ówkowe dla biblioteki discover.
 
 %prep
@@ -84,10 +84,10 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf api-reference
 mv $RPM_BUILD_ROOT%{_docdir}/discover/api-reference .
 rm -rf _doc
-mv $RPM_BUILD_ROOT/usr/share/doc/discover _doc
+mv $RPM_BUILD_ROOT%{_docdir}/discover _doc
 
 install -d $RPM_BUILD_ROOT/etc/rc.d/init.d
-mv $RPM_BUILD_ROOT/etc/{init.d/*,rc.d/init.d}
+mv $RPM_BUILD_ROOT/''etc/{init.d/*,rc.d/init.d}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
