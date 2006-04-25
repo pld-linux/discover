@@ -4,7 +4,8 @@
 # - docbook-to-man isn't present in pld, use sth else?
 # - update Group
 Summary:	discover - set of libraries and utilities for gathering and reporting information about a system's hardware
-Name:		discover - zbiór bibliotek oraz narzêdzi do zbierania oraz raportowania informacji o systemie
+Summary(pl):	discover - zbiór bibliotek oraz narzêdzi do zbierania oraz raportowania informacji o systemie
+name:		discover
 Version:	2.0.7
 Release:	0.1
 License:	GPL
