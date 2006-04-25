@@ -3,8 +3,8 @@
 # - do sth with source1
 # - docbook-to-man isn't present in pld, use sth else?
 # - update Group
-Summary:	discover
-Name:		discover
+Summary:	discover - set of libraries and utilities for gathering and reporting information about a system's hardware
+Name:		discover - zbiór bibliotek oraz narzêdzi do zbierania oraz raportowania informacji o systemie
 Version:	2.0.7
 Release:	0.1
 License:	GPL
@@ -53,6 +53,9 @@ Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This is the package containing the header files for discover library.
+
+%description -l pl devel
+Ten pakiet zawiera pliki nag³ówkowe dla biblioteki discover.
 
 %prep
 %setup -q -a1
