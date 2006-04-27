@@ -46,6 +46,20 @@ reporting Linux kernel modules and XFree86 server module names,
 Discover 2.0 allows the specification of any data (that can be
 expressed in XML format) to any software interface.
 
+%description -l pl
+Discover 2.0 to wieloplatformowy system wykrywania sprzêtu u¿ywaj±cy
+zale¿nych od systemu modu³ów (wybieranych w trakcie kompilacji) do
+wykrywania sprzêtu w systemie i udostêpniaj±cy niezale¿ne od systemu
+interfejsy do odpytywania o sprzêt ¼róde³ danych XML. Dostêpne s±
+tak¿e pliki z danymi.
+
+Discover 2.0 jest ca³kowicie przeprojektowany i przepisany Discover
+1.0, obs³uguje wi±zanie dowolnych danych z okre¶lonymi urz±dzeniami
+sprzêtowymi. Jako rozszerzenie w stosunku do wersji 1.0, ograniczonej
+do informowania o modu³ach j±dra Linuksa i nazwach modu³ów serwera
+XFree86, Discover 2.0 pozwala na podawanie dowolnych danych (które
+mo¿na wyraziæ w formacie XML) do dowolnego interfejsu programowego.
+
 %package devel
 Summary:	Header files for discover library
 Summary(pl):	Pliki nag³ówkowe biblioteki discover
@@ -99,11 +113,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc _doc/*
 %{_sysconfdir}/discover-modprobe.conf
+%dir %{_sysconfdir}/discover.conf.d
 %{_sysconfdir}/discover.conf.d/00discover
 %attr(754,root,root) /etc/rc.d/init.d/discover
-%attr(755,root,root) %{_libdir}/libdiscover.so.*.*.*
 %attr(755,root,root) %{_bindir}/discover
 %attr(755,root,root) %{_sbindir}/discover-modprobe
+%attr(755,root,root) %{_libdir}/libdiscover.so.*.*.*
 %{_mandir}/man1/discover.1*
 %{_mandir}/man5/discover-modprobe.conf.5*
 %{_mandir}/man5/discover.conf.5*
@@ -115,8 +130,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/discover-config
 %attr(755,root,root) %{_bindir}/discover-static
 %attr(755,root,root) %{_bindir}/discover-xml
-%{_includedir}/discover
+%attr(755,root,root) %{_libdir}/libdiscover.so
 %{_libdir}/libdiscover.la
+%{_includedir}/discover
 %dir %{_datadir}/discover
 %dir %{_datadir}/discover/dtd
 %{_datadir}/discover/dtd/conffile.dtd
