@@ -3,6 +3,7 @@
 # - do sth with source1
 # - docbook-to-man isn't present in pld, use sth else?
 # - update Group
+# - discover-config.1 contains garbage
 Summary:	discover - set of libraries and utilities for gathering and reporting information about a system's hardware
 Summary(pl):	discover - zbiór bibliotek oraz narzêdzi do zbierania oraz raportowania informacji o systemie
 Name:		discover
