@@ -5,7 +5,7 @@
 # - update Group
 # - discover-config.1 contains garbage
 Summary:	discover - set of libraries and utilities for gathering and reporting information about a system's hardware
-Summary(pl.UTF-8):   discover - zbiór bibliotek oraz narzędzi do zbierania oraz raportowania informacji o systemie
+Summary(pl.UTF-8):	discover - zbiór bibliotek oraz narzędzi do zbierania oraz raportowania informacji o systemie
 Name:		discover
 Version:	2.0.7
 Release:	0.1
@@ -63,7 +63,7 @@ można wyrazić w formacie XML) do dowolnego interfejsu programowego.
 
 %package devel
 Summary:	Header files for discover library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki discover
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki discover
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
