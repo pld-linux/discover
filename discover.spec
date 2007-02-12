@@ -5,7 +5,7 @@
 # - update Group
 # - discover-config.1 contains garbage
 Summary:	discover - set of libraries and utilities for gathering and reporting information about a system's hardware
-Summary(pl):	discover - zbiór bibliotek oraz narzêdzi do zbierania oraz raportowania informacji o systemie
+Summary(pl.UTF-8):   discover - zbiÃ³r bibliotek oraz narzÄ™dzi do zbierania oraz raportowania informacji o systemie
 Name:		discover
 Version:	2.0.7
 Release:	0.1
@@ -47,31 +47,31 @@ reporting Linux kernel modules and XFree86 server module names,
 Discover 2.0 allows the specification of any data (that can be
 expressed in XML format) to any software interface.
 
-%description -l pl
-Discover 2.0 to wieloplatformowy system wykrywania sprzêtu u¿ywaj±cy
-zale¿nych od systemu modu³ów (wybieranych w trakcie kompilacji) do
-wykrywania sprzêtu w systemie i udostêpniaj±cy niezale¿ne od systemu
-interfejsy do odpytywania o sprzêt ¼róde³ danych XML. Dostêpne s±
-tak¿e pliki z danymi.
+%description -l pl.UTF-8
+Discover 2.0 to wieloplatformowy system wykrywania sprzÄ™tu uÅ¼ywajÄ…cy
+zaleÅ¼nych od systemu moduÅ‚Ã³w (wybieranych w trakcie kompilacji) do
+wykrywania sprzÄ™tu w systemie i udostÄ™pniajÄ…cy niezaleÅ¼ne od systemu
+interfejsy do odpytywania o sprzÄ™t ÅºrÃ³deÅ‚ danych XML. DostÄ™pne sÄ…
+takÅ¼e pliki z danymi.
 
-Discover 2.0 jest ca³kowicie przeprojektowany i przepisany Discover
-1.0, obs³uguje wi±zanie dowolnych danych z okre¶lonymi urz±dzeniami
-sprzêtowymi. Jako rozszerzenie w stosunku do wersji 1.0, ograniczonej
-do informowania o modu³ach j±dra Linuksa i nazwach modu³ów serwera
-XFree86, Discover 2.0 pozwala na podawanie dowolnych danych (które
-mo¿na wyraziæ w formacie XML) do dowolnego interfejsu programowego.
+Discover 2.0 jest caÅ‚kowicie przeprojektowany i przepisany Discover
+1.0, obsÅ‚uguje wiÄ…zanie dowolnych danych z okreÅ›lonymi urzÄ…dzeniami
+sprzÄ™towymi. Jako rozszerzenie w stosunku do wersji 1.0, ograniczonej
+do informowania o moduÅ‚ach jÄ…dra Linuksa i nazwach moduÅ‚Ã³w serwera
+XFree86, Discover 2.0 pozwala na podawanie dowolnych danych (ktÃ³re
+moÅ¼na wyraziÄ‡ w formacie XML) do dowolnego interfejsu programowego.
 
 %package devel
 Summary:	Header files for discover library
-Summary(pl):	Pliki nag³ówkowe biblioteki discover
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki discover
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This is the package containing the header files for discover library.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe dla biblioteki discover.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe dla biblioteki discover.
 
 %prep
 %setup -q -a1
