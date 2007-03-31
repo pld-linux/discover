@@ -8,7 +8,7 @@ Summary:	discover - set of libraries and utilities for gathering and reporting i
 Summary(pl.UTF-8):	discover - zbiór bibliotek oraz narzędzi do zbierania oraz raportowania informacji o systemie
 Name:		discover
 Version:	2.0.7
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Applications
 Source0:	http://archive.progeny.com/progeny/discover/%{name}-%{version}.tar.gz
@@ -23,8 +23,7 @@ BuildRequires:	db-static
 #BuildRequires:	docbook-utils
 BuildRequires:	expat-devel
 BuildRequires:	expat-static
-BuildRequires:	heimdal-devel
-BuildRequires:	heimdal-static
+BuildRequires:	krb5-devel
 BuildRequires:	libidn-devel
 BuildRequires:	libidn-static
 BuildRequires:	openssl-devel
