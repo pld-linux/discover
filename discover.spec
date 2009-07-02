@@ -23,7 +23,7 @@ BuildRequires:	db-static
 #BuildRequires:	docbook-utils
 BuildRequires:	expat-devel
 BuildRequires:	expat-static
-BuildRequires:	krb5-devel
+BuildRequires:	heimdal-devel
 BuildRequires:	libidn-devel
 BuildRequires:	libidn-static
 BuildRequires:	openssl-devel
